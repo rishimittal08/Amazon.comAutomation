@@ -14,7 +14,7 @@ public class SearchToWishlist_Source extends Excel_File
 	WebElement search_tf;
 	@FindBy(id="nav-search-submit-button")
 	WebElement searchsubmit_btn;
-	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div[1]/div/div[2]/div/span/a/div")
+	@FindBy(xpath="//div[starts-with(@data-component-type,'s-search-result')][1]//div//span//img")
 	WebElement selfirst_link;
 	@FindBy(id="add-to-wishlist-button")
 	WebElement addtowishlist_drpdwn;

@@ -12,7 +12,7 @@ public class SearchToCheckPrice_Source
 	WebElement search_tf;
 	@FindBy(id="nav-search-submit-button")
 	WebElement searchsubmit_btn;
-	@FindBy(xpath="/html/body/div[1]/div[2]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div[1]/div/div[2]/div/span/a/div/img")
+	@FindBy(xpath="//div[starts-with(@data-component-type,'s-search-result')][1]//div//span//img")
 	WebElement selfirst_link;
 	
 	public SearchToCheckPrice_Source (WebDriver driver)
